@@ -19,11 +19,16 @@ makeCacheMatrix <- function(x = matrix() )
 
 
 
-## Write a short comment describing this function
+## function uses the object from the makeCacheMatrix to compute inverse of the matrix ##
 
 cacheSolve <- function(x,...) 
 {
   invr <- x$c() # scoping assignment used line 41
+      if(!is.null(m)) 
+        { # Included this program flow if statement to display message. From "cacheMean" example.
+          message("getting cached data")
+          return(m)
+        }
   
   mxData <- x$a() # assign data set
   invr <- solve(mxData)  # solve invr scope for mxData
