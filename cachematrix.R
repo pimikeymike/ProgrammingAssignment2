@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix() )
 
 ## Write a short comment describing this function
 
-invResult <- function(x,...) 
+cacheSolve <- function(x,...) 
 {
   invr <- x$c() # scoping assignment used line 41
   
